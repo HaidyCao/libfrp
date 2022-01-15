@@ -2,6 +2,7 @@ package libfrp
 
 import (
 	"fmt"
+	frp0362 "github.com/HaidyCao/frp_0362/cmd/frp"
 	"runtime/debug"
 
 	frp0271 "github.com/HaidyCao/frp_0271/cmd/frp"
@@ -15,6 +16,7 @@ import (
 )
 
 var (
+	Frp0362 = "0.36.2"
 	Frp0351 = "0.35.1"
 	Frp0321 = "0.32.1"
 	Frp0312 = "0.31.2"
@@ -42,6 +44,8 @@ func RunFrpc(cfgFilePath, version string) (err error) {
 		return frp0321.RunFrpc(cfgFilePath)
 	case Frp0351:
 		return frp0351.RunFrpc(cfgFilePath)
+	case Frp0362:
+		return frp0362.RunFrpc(cfgFilePath)
 	default:
 		return fmt.Errorf("bad version: %s", version)
 	}
@@ -64,6 +68,8 @@ func StopFrpc(version string) (err error) {
 		return frp0321.StopFrpc()
 	case Frp0351:
 		return frp0351.StopFrpc()
+	case Frp0362:
+		return frp0362.StopFrpc()
 	default:
 		return fmt.Errorf("bad version: %s", version)
 	}
@@ -85,6 +91,8 @@ func IsFrpcRunning(version string) bool {
 		return frp0321.IsFrpcRunning()
 	case Frp0351:
 		return frp0351.IsFrpcRunning()
+	case Frp0362:
+		return frp0362.IsFrpcRunning()
 	default:
 		return false
 	}
@@ -107,6 +115,8 @@ func RunFrps(cfgFilePath string, version string) (err error) {
 		return frp0321.RunFrps(cfgFilePath)
 	case Frp0351:
 		return frp0351.RunFrps(cfgFilePath)
+	case Frp0362:
+		return frp0362.RunFrps(cfgFilePath)
 	default:
 		return fmt.Errorf("bad version: %s", version)
 	}
@@ -129,6 +139,8 @@ func StopFrps(version string) error {
 		return frp0321.StopFrps()
 	case Frp0351:
 		return frp0351.StopFrps()
+	case Frp0362:
+		return frp0362.StopFrps()
 	default:
 		return fmt.Errorf("bad version: %s", version)
 	}
@@ -151,6 +163,8 @@ func IsFrpsRunning(version string) bool {
 		return frp0321.IsFrpsRunning()
 	case Frp0351:
 		return frp0351.IsFrpsRunning()
+	case Frp0362:
+		return frp0362.IsFrpsRunning()
 	default:
 		return false
 	}
@@ -173,6 +187,8 @@ func Version(version string) string {
 		return frp0321.Version()
 	case Frp0351:
 		return frp0351.Version()
+	case Frp0362:
+		return frp0362.Version()
 	default:
 		return "bad version"
 	}

@@ -2,7 +2,6 @@ package libfrp
 
 import (
 	"fmt"
-	frp0362 "github.com/HaidyCao/frp_0362/cmd/frp"
 	"runtime/debug"
 
 	frp0271 "github.com/HaidyCao/frp_0271/cmd/frp"
@@ -12,10 +11,13 @@ import (
 	frp0312 "github.com/HaidyCao/frp_0312/cmd/frp"
 	frp0321 "github.com/HaidyCao/frp_0321/cmd/frp"
 	frp0351 "github.com/HaidyCao/frp_0351/cmd/frp"
+	frp0362 "github.com/HaidyCao/frp_0362/cmd/frp"
+	frp0380 "github.com/HaidyCao/frp_0380/cmd/frp"
 	"github.com/fatedier/golib/crypto"
 )
 
 var (
+	Frp0380 = "0.38.0"
 	Frp0362 = "0.36.2"
 	Frp0351 = "0.35.1"
 	Frp0321 = "0.32.1"
@@ -46,6 +48,8 @@ func RunFrpc(cfgFilePath, version string) (err error) {
 		return frp0351.RunFrpc(cfgFilePath)
 	case Frp0362:
 		return frp0362.RunFrpc(cfgFilePath)
+	case Frp0380:
+		return frp0380.RunFrpc(cfgFilePath)
 	default:
 		return fmt.Errorf("bad version: %s", version)
 	}
@@ -70,6 +74,8 @@ func StopFrpc(version string) (err error) {
 		return frp0351.StopFrpc()
 	case Frp0362:
 		return frp0362.StopFrpc()
+	case Frp0380:
+		return frp0380.StopFrpc()
 	default:
 		return fmt.Errorf("bad version: %s", version)
 	}
@@ -93,6 +99,8 @@ func IsFrpcRunning(version string) bool {
 		return frp0351.IsFrpcRunning()
 	case Frp0362:
 		return frp0362.IsFrpcRunning()
+	case Frp0380:
+		return frp0380.IsFrpcRunning()
 	default:
 		return false
 	}
@@ -117,6 +125,8 @@ func RunFrps(cfgFilePath string, version string) (err error) {
 		return frp0351.RunFrps(cfgFilePath)
 	case Frp0362:
 		return frp0362.RunFrps(cfgFilePath)
+	case Frp0380:
+		return frp0380.RunFrps(cfgFilePath)
 	default:
 		return fmt.Errorf("bad version: %s", version)
 	}
@@ -141,6 +151,8 @@ func StopFrps(version string) error {
 		return frp0351.StopFrps()
 	case Frp0362:
 		return frp0362.StopFrps()
+	case Frp0380:
+		return frp0380.StopFrps()
 	default:
 		return fmt.Errorf("bad version: %s", version)
 	}
@@ -165,6 +177,8 @@ func IsFrpsRunning(version string) bool {
 		return frp0351.IsFrpsRunning()
 	case Frp0362:
 		return frp0362.IsFrpsRunning()
+	case Frp0380:
+		return frp0380.IsFrpsRunning()
 	default:
 		return false
 	}
@@ -189,6 +203,8 @@ func Version(version string) string {
 		return frp0351.Version()
 	case Frp0362:
 		return frp0362.Version()
+	case Frp0380:
+		return frp0380.Version()
 	default:
 		return "bad version"
 	}

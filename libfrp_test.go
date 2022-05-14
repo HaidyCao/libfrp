@@ -12,6 +12,7 @@ func TestVersion(t *testing.T) {
 	t.Log(Version(Frp0351))
 	t.Log(Version(Frp0362))
 	t.Log(Version(Frp0380))
+	t.Log(Version(Frp0391))
 }
 
 func TestIsFrpsRunning(t *testing.T) {
@@ -23,4 +24,5 @@ func TestIsFrpsRunning(t *testing.T) {
 	t.Log(IsFrpcRunning(Frp0351))
 	t.Log(IsFrpcRunning(Frp0362))
 	t.Log(IsFrpcRunning(Frp0380))
+	t.Log(IsFrpcRunning(Frp0391))
 }

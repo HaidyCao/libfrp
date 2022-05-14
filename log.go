@@ -10,6 +10,7 @@ import (
 	frp0351Log "github.com/HaidyCao/frp_0351/pkg/util/log"
 	frp0362Log "github.com/HaidyCao/frp_0362/pkg/util/log"
 	frp0380Log "github.com/HaidyCao/frp_0380/pkg/util/log"
+	frp0391Log "github.com/HaidyCao/frp_0390/pkg/util/log"
 )
 
 type FrpLogListener interface {
@@ -34,4 +35,5 @@ func SetFrpLogListener(l FrpLogListener) {
 	frp0351Log.AppendListener(l)
 	frp0362Log.AppendListener(l)
 	frp0380Log.AppendListener(l)
+	frp0391Log.AppendListener(l)
 }

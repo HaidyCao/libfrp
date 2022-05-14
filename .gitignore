@@ -4,3 +4,5 @@ libfrp-sources.jar
 Libfrp.framework
 Libfrp.framework.zip
 .DS_Store
+Libfrp.xcframework
+Libfrp.xcframework.zip

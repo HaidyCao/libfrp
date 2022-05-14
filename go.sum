@@ -53,8 +53,13 @@ github.com/HaidyCao/frp_0380 v0.38.1-0.20220115042102-910751d4d317 h1:rC+DZkqPAi
 github.com/HaidyCao/frp_0380 v0.38.1-0.20220115042102-910751d4d317/go.mod h1:7DMpXFY1keAJqPK9aQ1Sh2WzWby7OFU066y2leCORtA=
 github.com/HaidyCao/frp_0390 v0.39.3 h1:Cu0DD9FXXPB7gh9rB7FDPUdbXnXUNvRJuRBv7CApiOM=
 github.com/HaidyCao/frp_0390 v0.39.3/go.mod h1:NgRq9kgOSgLtSJsPhRABfbdw+a127DJeKeusKgH6lE4=
-github.com/HaidyCao/go-proxyproto v0.5.1 h1:v45jKm0eI3Q5D9ot9RBwz7T1jvZCnYwgPlv8Je0SWsU=
+github.com/HaidyCao/frp_0420 v0.42.1-0.20220514103222-80079b9e4dde h1:iyKnEu4HW6tY3mCb2+RYCEQkKzEJiohZWv5sMVKQA+o=
+github.com/HaidyCao/frp_0420 v0.42.1-0.20220514103222-80079b9e4dde/go.mod h1:l7rS/d3a6wrZmXKFIWCYkSYwYc49LDLpwXB/+9h8QYo=
 github.com/HaidyCao/go-proxyproto v0.5.1/go.mod h1:NSqq0nPANJ18i6A4P/3wCuXSIcpqKqjcKpeTTY/wQHk=
+github.com/HaidyCao/go-proxyproto v0.6.2 h1:d3a0C+cQ8IVXC4nqrswi/2tZkBZGUvhtLmqGoWOpXeI=
+github.com/HaidyCao/go-proxyproto v0.6.2/go.mod h1:NSqq0nPANJ18i6A4P/3wCuXSIcpqKqjcKpeTTY/wQHk=
+github.com/HaidyCao/golib v1.0.0 h1:FLsDWATZLdCTr3z6K9GnMbOdc4oLYFNJvU4ebPp5Tu0=
+github.com/HaidyCao/golib v1.0.0/go.mod h1:MCbtBazGwzJ4+NdPnYWOS08jxnWfJr04K25aLlSQdXo=
 github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46/go.mod h1:3wb06e3pkSAbeQ52E9H9iFoQsEEwGN64994WTCIhntQ=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
 github.com/PuerkitoBio/purell v1.0.0/go.mod h1:c11w/QuzBsJSee3cPx9rAFu61PvFxuPbtSwDGJws/X0=
